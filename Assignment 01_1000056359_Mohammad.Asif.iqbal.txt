@@ -1,0 +1,63 @@
+// Task 1
+public class Main {
+    public static void main(String[] args) {
+      int   min=3456789;
+      int hour=min/60;
+      int day=hour/24;
+      int year=day/365; // finding out the year
+      int remaining_days=day%365; // finding out the remaining days
+      System.out.println("the number years is "+ year);
+      System.out.println("The number of remaining days are "+ remaining_days);
+    }
+}
+ 
+// Task 2
+public class Main {
+    public static void main(String[] args) {
+      int a=2;
+      int b=5;
+      int c=8;
+      int d=((2*b*(c-a)/3)+7); // entering the value of d
+      System.out.print("The value of d is "+ d);
+    }
+}
+
+// Task 3
+public class assignment_3{
+  public static void main(String []args){
+  int id=1000056359;
+  int digit1=id%10; // rightmost digit
+   int digit2=(id/10)%10;
+    System.out.println("Rightmost digit is "+ digit1);
+    System.out.println("Second rightmost digit is "+ digit2);
+ }
+}
+// Task 4
+public class assignment_4{
+  public static void main(String []args){
+    int a=8;
+    int b=3;
+    int side=2*b;
+    int perimeter=6*side;
+    int area=(perimeter*a)/2;
+      System.out.println("Area is "+ area);
+      System.out.println("Perimeter is " + perimeter);
+ }
+}
+
+// Task 4
+public class assignment_5{
+  public static void main(String []args){
+    double a=4.5;
+      double b=9.5;
+      double c = Math.sqrt((a * a) + (b * b)); // finding the value of C
+    double sinA=a/c;
+    double cosA=b/c;
+    double sinB=b/c;
+    double cosB=a/c;
+    System.out.println("The value of sinA "+ sinA);
+    System.out.println("The value of sinB "+ sinB);
+    System.out.println("The value of cosA "+ cosA);
+    System.out.println("The value of cosB "+ cosB);
+  }
+}

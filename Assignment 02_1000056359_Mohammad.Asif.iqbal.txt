@@ -1,0 +1,169 @@
+// Task 1
+import java.util.Scanner;
+public class Assignment2_task1{
+  public static void main (String[] args){
+    System.out.println("Input your number");
+    Scanner sc= new Scanner(System.in);
+    int num=sc.nextInt();
+    if(num%5==0 && num%7==0){
+    System.out.print("The number is divisable by both 5 and 7");
+    }else if(num%5==0) {
+    System.out.print("The number is divisable only by 5");
+    }else if(num%7==0){
+    System.out.print("The number is divisable only by 7");
+    }else{
+    System.out.print("The number is not divisable by both 5 and 7");
+    }
+  }
+}
+
+// task 2
+
+import java.util.Scanner;
+public class Assignment2_task2 {
+  public static void main (String[] args) {
+    System.out.println("Input your age");
+    Scanner sc = new Scanner(System.in);
+    int age = sc.nextInt();
+
+    System.out.print("Input your income: ");
+    int income = sc.nextInt();
+
+    if (age > 18) {
+      if (income < 10000) {
+        System.out.print("No tax (due to low salary)");
+      } else if (income >= 10000 && income <= 20000) {
+        System.out.print("tax " + income * 5 / 100);
+      } else if (income > 20000) {
+        System.out.print("tax " + income * 10 / 100);
+      }
+    } else {
+      System.out.print("No tax (due to being under 18)");
+    }
+  }
+}
+
+// Task 3
+
+import java.util.Scanner;
+public class Assignment_task {
+ public static void main(String[] args) 
+        {
+ Scanner sc= new Scanner(System.in);
+System.out.println("Enter first number");
+ float num1 = sc.nextFloat();
+
+ System.out.println("Enter second number");
+        float num2 = sc.nextFloat();
+System.out.println("Enter last number");
+ float num3 = sc.nextFloat();
+        
+        float max;float min;
+        
+ if (num1 > num2) {
+       if (num1 > num3) {
+                max = num1;
+            } else 
+            {max = num3;
+            }
+    } else 
+    {
+            if (num2 > num3) 
+            {
+                max = num2;
+    } else 
+    {
+                max = num3;
+            }
+        }
+        
+  if (num1 < num2) 
+  {
+  if (num1 < num3) 
+  {
+                min = num1;
+     } else 
+     {min = num3;
+            }
+      } else 
+      {
+  if (num2 < num3) 
+  {
+                min = num2;
+      } else 
+      {min = num3;
+            }
+        }
+        
+        System.out.println("Maximum number is " + max);
+        System.out.println("Minimum number is " + min);
+    }
+}
+
+// Task 4
+import java.util.Scanner;
+public class Assignment2_task4{
+public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+ System.out.println("Enter first side");
+ int side1 = sc.nextInt();
+ System.out.println("Enter second side");
+ int side2 = sc.nextInt();
+ System.out.println("Enter third side");
+ int side3 = sc.nextInt();
+if(side1==side2 && side2==side3){
+    System.out.println("Equilateral");
+  } 
+else if (side1==side2 || side2==side3){
+     System.out.println("Isosceles");
+  } 
+else {
+  System.out.println("Scalene1");
+  }
+} 
+}
+
+//Task 5
+import java.util.Scanner;
+public class Assignment2_task5{
+public static void main(String[] args) {
+  System.out.println("Enter the amount of bill");
+  Scanner sc=new Scanner(System.in);
+  int bill =sc.nextInt();
+  System.out.println("Enter the amount of paid");
+  int paid=sc.nextInt();
+  if(bill>paid){
+  System.out.println("Payment due "+(bill-paid));
+  } else if (paid>bill) {
+  System.out.println("change due "+(paid-bill));
+  } else {
+  System.out.println("No extra payment is due and no changes are due"+(paid-bill));
+  }
+} 
+}
+
+//Task 6
+import java.util.Scanner;
+public class Assignment2_task6{
+ public static void main(String[] args) {
+ 
+   Scanner sc = new Scanner(System.in);
+ System.out.println("Enter first Number");
+ int num1 = sc.nextInt();
+ System.out.println("Enter second Number");
+ int num2 = sc.nextInt();
+ System.out.println("Enter third Number");
+ int num3 = sc.nextInt();
+ if (num1==num2 && num2==num3)
+ {
+ System.out.println("All numbers are equal");
+ } else if (num1==num2 || num2==num3) {
+ System.out.println("Two numbers are equal and one different");
+ }
+ else
+ {
+   System.out.println("All numbers are not different");
+ }
+ 
+} 
+}
