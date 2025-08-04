@@ -1,0 +1,160 @@
+// Task 1
+import java.util.Scanner;
+public class Assinment04_task01
+{ public static void main (String[]args)
+  {
+  System.out.println("Enter N");
+  Scanner sc= new Scanner(System.in);
+  int N = sc.nextInt();
+  for (int i=0;i<N;i++)
+   {
+    int sum=0;
+    System.out.println("Enter x");
+    int x = sc.nextInt();
+    System.out.println("Enter y");
+    int y = sc.nextInt();
+   if (x % 2 == 0)
+   {
+    x = x + 1;
+   }
+    for (int count = 0; count < y; count++)
+    {
+    sum += x;
+    x += 2;
+    }
+    System.out.println(sum);
+   }
+  }
+}
+
+// Task 2
+import java.util.Scanner;
+public class Assinment04_task02
+{ 
+  public static void main (String[]args)
+  {
+    System.out.println("Enter lenght");
+  Scanner sc= new Scanner(System.in);
+  int l = sc.nextInt();
+  System.out.println("Enter width");
+  int w = sc.nextInt();
+    for (int i=0;i<w;i++)
+    {
+      for (int j =1;j<=l;j++)
+      {
+      System.out.print(j + " ");
+      }
+      System.out.println();
+    }
+  }
+}
+
+// Task 3
+import java.util.Scanner;
+public class Assinment04_task03
+{ 
+  public static void main (String[]args)
+  {
+    System.out.println("Enter first number");
+  Scanner sc= new Scanner(System.in);
+  int first = sc.nextInt();
+  System.out.println("Enter last number");
+  int last = sc.nextInt();
+  int n = first;
+    while (n <= last)
+    {
+      if (n >= 2)
+      {
+        int d = 2;
+        while (d * d <= n)
+        {
+          if (n % d == 0)
+          {
+            break;
+          }
+          d++;
+        }
+        if (d * d > n)
+        {
+          System.out.println(n);
+        }
+      }
+      n++;
+    }
+  }
+}
+
+// task 4
+import java.util.Scanner;
+public class Assinment04_task04
+{ 
+  public static void main (String[]args)
+  {
+    System.out.println("Enter custom number");
+    Scanner sc = new Scanner(System.in);
+    int cust_num = sc.nextInt();
+    
+    for (int i = 0; i < cust_num; i++)
+    {
+      System.out.println("Enter item count for Customer-" + (i + 1));
+      int item_count = sc.nextInt();
+      double sum = 0;
+
+      for (int j = 1; j <= item_count; j++)
+      {
+        System.out.println("Enter price for Item: " + j);
+        double price = sc.nextDouble();
+        sum += price;
+      }
+
+      double avg = sum / item_count;
+      System.out.println("Average for Customer-" + (i + 1) + ": " + avg);
+    }
+  }
+}
+
+// Task 5
+
+import java.util.Scanner;
+public class Assinment04_task05
+{ 
+  public static void main (String[]args)
+  {
+    System.out.println("Enter start");
+    Scanner sc = new Scanner(System.in);
+    int start = sc.nextInt();
+    System.out.println("Enter end");
+    int end = sc.nextInt();
+
+    System.out.println("Armstrong numbers:");
+    for (int n = start; n <= end; n++)
+    {
+      int temp = n;
+      int digits = 0;
+      while (temp > 0)
+      {
+        digits = digits + 1;
+        temp = temp / 10;
+      }
+
+      temp = n;
+      int sum = 0;
+      while (temp > 0)
+      {
+        int digit = temp % 10;
+        int power = 1;
+        for (int i = 0; i < digits; i++)
+        {
+          power = power * digit;
+        }
+        sum = sum + power;
+        temp = temp / 10;
+      }
+
+      if (sum == n)
+      {
+        System.out.println(n);
+      }
+    }
+  }
+}
