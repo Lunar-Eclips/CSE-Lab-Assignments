@@ -4,7 +4,7 @@ All Lab assignments that I,a BRACU CSE undergrad from summer-2025, face will be 
 
 
 
-<h3> [CSE110](CSE110) </h3>
+<h3> [CSE110](CSE110/) </h3>
 
 [Lab 1](CSE110/Assignment01.txt)
 [Lab question](Lab_Questions/Assignment_Q01.pdf)
