@@ -2,6 +2,8 @@
 
 All Lab assignments that I,a BRACU CSE undergrad from summer-2025, face will be uploaded here.
 
+🔗 For my personal passion project please check out <a href="https://github.com/Lunar-Eclips/Personal-projects">Personal-projects </a>
+
 
 
 ### [CSE110](CSE110/)
