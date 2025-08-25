@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class task01
 {
     public static void main(String[] args)
@@ -34,7 +35,7 @@ public class task01
             for (int num = 1; num <= 2 * row_count - 1; num++) {
                 System.out.print(num);
             }
-            System.out.println();
+            System.out.println("Element not found");
         }
     }
 }
