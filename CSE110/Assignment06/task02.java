@@ -5,7 +5,7 @@ public class task02
     public static void main(String[] args) 
     {
         System.out.print("Enter string number 1 :");
-        Scanner sc = new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         String str1 = sc.nextLine();
         System.out.print("Enter string number 1 :");
         String str2 = sc.nextLine();

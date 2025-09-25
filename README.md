@@ -28,3 +28,9 @@ All Lab assignments that I,a BRACU CSE undergrad from summer-2025, face will be 
 
 [Lab 7](CSE110/Assignment07)
 [Lab question](Lab_Questions/Assignment_Q07.pdf)
+
+[Lab 8](CSE110/Assignment08)
+[Lab question](Lab_Questions/Assignment_Q08.pdf)
+
+[Lab 9](CSE110/Assignment09)
+[Lab question](Lab_Questions/Assignment_Q09.pdf)

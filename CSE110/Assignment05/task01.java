@@ -4,7 +4,7 @@ public class task01
 {
     public static void main(String[] args)
     { // taking input from user
-        Scanner sc = new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
         System.out.print("Enter the size of the rhombus: ");
         int row = sc.nextInt();
 
