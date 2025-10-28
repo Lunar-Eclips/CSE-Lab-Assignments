@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Task01{
+  public static void main (String [] args ){
+ Scanner sc = new Scanner ( System.in );
+ 
+ int num1 = sc.nextInt();
+ int num2 = sc.nextInt();
+ 
+ int bigNum = 0;
+ int smallNum = 0;
+ 
+ int count = 0;
+ 
+ if ( num1 < num2 ){
+    bigNum = num2;
+    smallNum = num1;
+ }
+ else {
+    bigNum = num1;
+    smallNum = num2;
+ }
+ for( int i = smallNum ; i <= bigNum ; i++ ){
+ if ( i < 2 ) continue;
+ 
+ boolean isPrime = true;
+ 
+ for (int j = 2; j * j <= i; j++){
+   if (i % j == 0) {
+   isPrime = false;
+   break;
+   }
+ }
+ if (isPrime) count++;
+ }
+ 
+    System.out.println("There are "+ count + " prime numbers between "+ num1+" and "+num2 +".");
+ 
+}
+}
