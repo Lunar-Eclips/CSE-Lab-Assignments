@@ -1,0 +1,12 @@
+public class Company{
+ public String name = "ABC";
+ public int age;
+ public String type;
+ 
+ public Company{
+  System.out.println("Company Name: "+name+" Company");
+  System.out.println("Total Employee: ");
+  System.out.println();
+  System.out.println();
+ }
+}

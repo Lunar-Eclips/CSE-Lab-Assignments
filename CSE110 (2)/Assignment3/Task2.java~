@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Task2{
+ Scanner sc = new Scanner (System.in);
+ 
+ System.out.println("Please Enter number of Herbs (H): ");
+ int H = nextInt();
+ 
+ System.out.prntln("Please Enter number of Crystals (C)");
+ int C = nextInt();
+ 
+ int i = 0
+ while (true){
+  H -= 3;
+  C -= 2;
+  System.out.println("Remaining Herbs: "+H+"Remaining Crystals: "+C);
+  i++;
+  if ( H < 3 || C < 2){
+   System.out.println("Potions Created: "+ i);
+   if ( i % 2 == 0){
+    System.out.println("Stable Brew");
+   } else {
+     System.out.println("Volatile Elixir")
+   }
+   break;
+  }
+ }
+}

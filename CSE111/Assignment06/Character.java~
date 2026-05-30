@@ -1,0 +1,26 @@
+public class Character{
+ public String name;
+ public String group ="Teen";
+ public int health;
+ public static int [] ageArr = new int [3];
+ public static int count;
+ public static int netHealth;
+ public static double avgHealth;
+ public static String Schar;
+ 
+ public Character(String name,int health){
+ this.name = name;
+ this.health = health;
+ netHealth += health;
+ count++;
+ }
+ 
+ public Character (String name,String group,int health){
+ this(name,health);
+ this.group = group;
+ if (group == "Kid") Schar[0]++;
+ if (group == "Teen") Schar[1]++;
+ if (group == "Adult") Schar[2]++;
+ }
+ 
+}

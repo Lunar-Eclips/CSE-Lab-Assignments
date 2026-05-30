@@ -1,0 +1,5 @@
+public class Employee{
+public String name;
+public String designation = "Junior";
+public int salary = 30000;
+}

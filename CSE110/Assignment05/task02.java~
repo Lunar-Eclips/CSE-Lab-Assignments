@@ -6,32 +6,19 @@ public class task02 {
         int row = sc.nextInt();
 
         // First line
-        for (int space = 1; space <= row - 1; space++)
-        {
-            System.out.print(" ");
-        }
         System.out.println(row);
 
         // other lines
         for (int row_count = row - 1; row_count >= 2; row_count--) 
         {
-            int leading = row_count - 1;
-            for (int s = 1; s <= leading; s++) 
-            {
-                System.out.print(" ");
-            }
-
             System.out.print(row_count);
-
-            int inner = row - leading - 2;
-            if (inner < 0) inner = 0;
-
-            for (int space_counter = 1; space_counter <= inner; space_counter++) {
+            for (int space_counter = 1; space_counter <= row - row_count - 1; space_counter++) {
                 System.out.print(" ");
             }
-
             System.out.println(row);
         }
+
+        // Last line
         if (row > 1) 
         {
             for (int num = 1; num <= row; num++) {

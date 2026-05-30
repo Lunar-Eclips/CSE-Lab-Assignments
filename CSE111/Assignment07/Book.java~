@@ -1,0 +1,5 @@
+public class Book extends Product{
+ private String isbn;
+ private Stringer publisher;
+ 
+}

@@ -1,0 +1,27 @@
+public class Reader{
+ public String name;
+ public int num_of_books;
+ public int capacity = 0;
+ public String [] book_name = new String [num_of_books];
+ 
+ public Reader( String name, int num){
+  this.name = name;
+  int num_of_books = num;
+ }
+ 
+ public void readerInfo(){
+  System.out.println("Name: " + this.name);
+  System.out.println("Capacity: " + this.name);
+  System.out.print("Books: ");
+  for (int i = 0; i <= num_of_books; i++){
+    if ( book_name[i] != null){
+  System.out.println("Book " + i +": " book_name[i]);
+  }
+ }
+ }
+ 
+ public void addBook( String book ){
+ 
+ }
+ 
+}

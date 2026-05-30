@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class task07
 {
     public static void main(String[] args)
-    {
+    { // taking input from user
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the hourglass: ");
         int row = sc.nextInt();

@@ -1,0 +1,61 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class task4{
+  public static void main (String [] args ){
+  Scanner sc = new Scanner(System.in);
+  
+  System.out.println("Number of Members: ");
+  int members = sc.nextInt();
+  
+  for (int i = 1; i <= members; i++){
+    System.out.println("Exercises for Member-" + i + ": ");
+    int exercises = sc.nextInt();
+    
+    double[] calories = new double[exercises];
+    
+    for (int j = 0; j < exercises; j++){
+      System.out.println("Exercise-" + (j+1) + ": ");
+      calories[j] = sc.nextDouble();
+    }
+    
+    Arrays.sort(calories);
+    
+    double total = 0;
+    int count = Math.min(3, exercises);
+    
+    for (int k = exercises - 1; k >= exercises - count; k--){
+      double current = calories[k];
+      if (current > 350) {
+        current = current + (current * 0.5);
+      }
+      total = total + current;
+    }
+    
+    boolean allLessThan200 = true;
+    for (int k = exercises - 1; k >= exercises - count; k--){
+      if (calories[k] >= 200) {
+        allLessThan200 = false;
+        break;
+      }
+    }
+    
+    if (allLessThan200) {
+      total = total - (total * 0.1);
+    }
+    
+    double rawSum = 0;
+    for (int k = exercises - 1; k >= exercises - count; k--){
+      rawSum = rawSum + calories[k];
+    }
+    
+    double rawAvg = rawSum / count;
+    if (rawAvg > 400) {
+      total = total + (50 * count);
+    }
+    
+    double average = total / count;
+    System.out.println("Average calories earned per day for Member-" + i + ": " + String.format("%.3f", average));
+  }
+  } 
+}

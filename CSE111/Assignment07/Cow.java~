@@ -1,0 +1,5 @@
+public class Cow{
+  public void getName(){
+   System.out.println("Name: "+Super.name);
+  }
+}

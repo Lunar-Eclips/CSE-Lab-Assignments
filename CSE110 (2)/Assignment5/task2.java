@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class task2{
+  public static void main (String [] args){
+  Scanner sc = new Scanner(System.in);
+  String str1 = sc.nextLine();
+  String str2 ="";
+  String str3 ="";
+
+  for (int i = 0;i < str1.length();i++){
+    char ch = str1.charAt(i);
+    if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+      str2 += ch;
+    }
+  }
+  int j = str2.length() - 1;
+  for (int i = 0;i < str1.length();i++){
+    char ch = str1.charAt(i);
+    if (ch!='a'&&ch!='e'&&ch!='i'&&ch!='o'&&ch!='u'&&ch!='A'&&ch!='E'&&ch!='I'&&ch!='O'&&ch!='U'){
+      str3 += ch;
+    }
+    else{
+      str3 += str2.charAt(j);
+      j--;
+    }
+  }
+  System.out.println(str3);
+  }
+}

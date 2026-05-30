@@ -1,0 +1,22 @@
+// Task 4
+import java.util.Scanner;
+public class Assignment2_task4{
+public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+ System.out.println("Enter first side");
+ int side1 = sc.nextInt();
+ System.out.println("Enter second side");
+ int side2 = sc.nextInt();
+ System.out.println("Enter third side");
+ int side3 = sc.nextInt();
+if(side1==side2 && side2==side3){
+    System.out.println("This is a Equilateral triangle");
+  } 
+else if (side1==side2 || side2==side3){
+     System.out.println("This is a Isosceles triangle");
+  } 
+else {
+  System.out.println("This is a Scalene triangle");
+  }
+} 
+}

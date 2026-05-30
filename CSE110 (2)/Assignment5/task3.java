@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class task3{
+  public static void main(String[] args){
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Names of the spells: ");
+  String longestSpell = "";
+  int powerLevel = 0;
+
+  while (true){
+    String spell = sc.nextLine();
+    if (spell.equals("stop")){
+      break;
+    }
+    String cleaned = "";
+    for (int i = 0; i < spell.length(); i++){
+      char ch = spell.charAt(i);
+      if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')){
+        cleaned += ch;
+      }
+    }
+    cleaned = cleaned.toUpperCase();
+    if (cleaned.length() > longestSpell.length()){
+      longestSpell = cleaned;
+      powerLevel = 0;
+      for (int i = 0; i < cleaned.length(); i++){
+        powerLevel += (int) cleaned.charAt(i);
+      }
+    }
+  }
+
+  System.out.println("Largest Spell : " + longestSpell);
+  System.out.println("Power Level : " + powerLevel);
+  }
+}

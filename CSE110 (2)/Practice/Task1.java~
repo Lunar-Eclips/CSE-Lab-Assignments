@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Task1{
+  public static int StringToInt(char a){
+   int output;
+   return;
+  } 
+  public static void main (String [] arg){
+  Scanner sc = new Scanner (System.in);
+  String input = sc.nextLine();
+  for (int i = 0; i < input.length();i++){
+   
+  }
+  }
+}
